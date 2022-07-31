@@ -12,13 +12,14 @@
 
 #up-bar {
     background-color: #0044ff;
-    padding: 10px 0 10px 0;
+    height: 100px;
 }
 
 #header-bar {
     align-items: center;
     justify-content: space-between;
     color: white;
+    height: 100%;
 }
 
 #super-title {
@@ -52,7 +53,7 @@
 }
 
 #bottom-bar {
-    padding: 22px 0 22px 0;
+    height: 100px;
     background-color: #0044ff;
 }
 
@@ -62,6 +63,7 @@
     justify-content: space-around;
     font-size: 12pt;
     color: white;
+    height: 100%;
 }
 
 #name {
