@@ -1,113 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Turismos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header>
-        <h1>FlexTurismos</h1>
-        <ul>
-            <li><a href="#quem-somos">Quem Somos</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#planos">Planos</a></li>
-        </ul>
+    <header id="up-bar">
+        <section id="header-bar" class="flex-center">
+            <span title="FlexTurismos" id="super-title">FlexTurismos</span>
+
+            <nav id="nav-bar">
+                <ul id="page-links">
+                    <li><a title="Saiba quem somos" class="link" href="#quem-somos">Quem Somos</a></li>
+                    <li><a title="Conheça os nossos serviços" class="link" href="#servicos">Serviços</a></li>
+                    <li><a title="Dê uma olhada em nossos planos" class="link" href="#planos">Planos</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
-    <div>
-        <div>
-            <h1>Flex <br>Turismos</h1>
+    <section class="flex-center" id="flex-turismos">
+        <header id="main-header">
+            <h1 id="title">Flex <br>Turismos</h1>
             <p>O melhor serviço para você!</p>
-            <a href="">Saiba Mais!</a>
-        </div>
+            <a title="Saiba mais aqui" href="#">Saiba Mais!</a>
+        </header>
 
-        <div>
-            <div><img src="./images/0-main.png" alt="banner de apresentação"></div>
-        </div>
-    </div>
+        <figure id="turismos-image">
+            <img class="images" src="./images/0-main.png" alt="Banner de apresentação">
+        </figure>
+    </section>
 
-    <div>
-        <div>
-            <img src="./images/1-quem-somos.png" alt="balcão de atendimento">
-        </div>
+    <section class="flex-center" id="quem-somos">
+        <figure id="quemsomos-image">
+            <img class="images" src="./images/1-quem-somos.png" alt="Balcão de atendimento">
+        </figure>
 
-        <div>
-            <h2>Quem somos</h2>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-        </div>
-    </div>
+        <article id="content">
+            <header id="quemsomos-header">
+                <h2 class="subtitle">Quem somos</h2>
+            </header>
 
-    <div>
-        <div>
-            <h2>Serviços</h2>
-        </div>
+            <p class="quemsomos-content">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo
+                legível de uma página ao olhar para seu layout.</p>
+            <p class="quemsomos-content">O ponto de usar Lorem Ipsum é que ele tem uma distribuição mais ou menos normal
+                de letras, ao contrário de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça inglês legível.
+            </p>
+        </article>
+    </section>
 
-        <div>
-            <div>
-                <div><img src="./images/icon-2.png" alt="hospedagens"></div>
-                <p>Hospedagens</p>
-                <a href="#">Comprar Agora</a>
-            </div>
+    <section class="flex-center blue" id="servicos">
+        <header id="servicos-header">
+            <h2 class="subtitle">Serviços</h2>
+        </header>
 
-            <div>
-               <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
-               <p>Pacotes de viagens</p>
-               <a href="#">Comprar Agora</a>
-            </div>
+        <section id="tipos-servicos">
+            <article class="nossos-servicos">
+                <figure class="servicos-icon">
+                    <img src="./images/icon-2.png" alt="hospedagens">
+                    <figcaption>Hospedagens</figcaption>
+                </figure>
+                <a title="Compre uma hospedagem aqui" href="#">Comprar Agora</a>
+            </article>
 
-            <div>
-                <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
-                <p>Roteiros personalizados</p>
-                <a href="#">Comprar Agora</a>
-            </div>
+            <article class="nossos-servicos">
+                <figure class="servicos-icon">
+                    <img src="./images/icon-1.png" alt="pacote de viagens">
+                    <figcaption>Pacotes de viagens</figcaption>
+                </figure>
+                <a title="Compre um pacote de viagens aqui" href="#">Comprar Agora</a>
+            </article>
 
-        </div>
-    </div>
+            <article class="nossos-servicos">
+                <figure class="servicos-icon">
+                    <img src="./images/icon-3.png" alt="roteiros personalizados">
+                    <figcaption>Roteiros personalizados</figcaption>
+                </figure>
+                <a title="Roteiros personalizados aqui" href="#">Comprar Agora</a>
+            </article>
+        </section>
+    </section>
 
-    <div>
+    <section class="flex-center" id="planos">
+        <header id="planos-header">
+            <h2 class="subtitle">Planos</h2>
+        </header>
 
-        <div>
-            <h3>Plano 2</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
-        </div>
+        <section id="tipos-planos">
+            <article class="nossos-planos">
+                <header class="tiposplanos-header">
+                    <h3 class="subtitle-tipos">Plano 1</h3>
+                </header>
 
-        <div>
-            <h3>Plano 2</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-                <li>Roteiro de trilhas</li>
-                <li>Serviço personalizado</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
-        </div>
+                <ul class="lista-planos">
+                    <li>Suporte 24h</li>
+                    <li>Serviços de quarto</li>
+                    <li>Guia turístico</li>
+                </ul>
+                <a title="Mais sobre o plano 1 aqui" href="#">Saiba Mais!</a>
+            </article>
 
-        <div>
-            <h3>Plano 3</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-                <li>Roteiro de trilhas</li>
-                <li>Serviço personalizado</li>
-                <li>Área Vip</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
-        </div>
-    </div>
+            <article class="nossos-planos">
+                <header class="tiposplanos-header">
+                    <h3 class="subtitle-tipos">Plano 2</h3>
+                </header>
 
-    <footer>
-        <p>&copy; 2021 CSS Flexbox</p>
-        <p>Desenvolvido por: Seu nome aqui dev</p>
+                <ul class="lista-planos">
+                    <li>Suporte 24h</li>
+                    <li>Serviços de quarto</li>
+                    <li>Guia turístico</li>
+                    <li>Roteiro de trilhas</li>
+                    <li>Serviço personalizado</li>
+                </ul>
+                <a title="Mais sobre o plano 2 aqui" href="#">Saiba Mais!</a>
+            </article>
+
+            <article class="nossos-planos">
+                <header class="tiposplanos-header">
+                    <h3 class="subtitle-tipos">Plano 3</h3>
+                </header>
+
+                <ul class="lista-planos">
+                    <li>Suporte 24h</li>
+                    <li>Serviços de quarto</li>
+                    <li>Guia turístico</li>
+                    <li>Roteiro de trilhas</li>
+                    <li>Serviço personalizado</li>
+                    <li>Área Vip</li>
+                </ul>
+                <a title="Mais sobre o plano 3 aqui" href="#">Saiba Mais!</a>
+            </article>
+        </section>
+    </section>
+
+    <footer id="bottom-bar">
+        <section id="footer-bar" class="flex-center">
+            <p>&copy; 2022 CSS Flexbox</p>
+            <p>Desenvolvido por <span title="Dev: Mateus Araújo" id="name">Mateus Araújo</span></p>
+        </section>
     </footer>
 </body>
+
 </html>
