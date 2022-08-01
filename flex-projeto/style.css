@@ -12,7 +12,10 @@
 
 #up-bar {
     background-color: #0044ff;
-    height: 100px;
+    height: 80px;
+    padding: 20px 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 #header-bar {
@@ -52,9 +55,16 @@
     color: #0044ff;
 }
 
+#tipos-servicos, #tipos-planos {
+    display: flex;
+}
+
 #bottom-bar {
-    height: 100px;
+    height: 80px;
+    padding: 20px 0;
     background-color: #0044ff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 #footer-bar {
@@ -76,7 +86,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     #header-bar {
         flex-direction: column;
     }
