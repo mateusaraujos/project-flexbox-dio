@@ -28,6 +28,7 @@
 #super-title {
     user-select: none;
     font-size: 25pt;
+    text-shadow: 1px 0 3px black;
 }
 
 #page-links {
@@ -42,21 +43,106 @@
     margin: 5px;
 }
 
-#page-links li .link {
+a {
+    text-decoration: none;
     padding: 5px 10px;
     color: white;
-    text-decoration: none;
     border-radius: 50px;
     border: 2px solid white;
+    text-shadow: 1px 0 3px black;
+    box-shadow: 1px 1px 3px 0 black;
 }
 
-#page-links li .link:hover {
+a:hover {
+    text-shadow: 1px 1px 3px grey;
     background-color: white;
     color: #0044ff;
 }
 
+#flex-turismos {
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#flex-turismos #main-header {
+    min-height: 200px;
+    text-shadow: 1px 1px 1px grey;
+}
+
+#main-header #title {
+    font-size: 30pt;
+    color: #0044ff;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+#main-header p {
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+
+#flex-turismos a, #planos a {
+    display: block;
+    text-align: center;
+    width: 100px;
+    color: #0044ff;
+    border-color: #0044ff;
+    text-shadow: 1px 0 1px grey;
+}
+
+#flex-turismos a:hover, #planos a:hover {
+    background-color: #0044ff;
+    color: white;
+    text-shadow: 1px 0 3px black;
+}
+
+.images {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+#quem-somos {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#quemsomos-header .subtitle {
+    display: flex;
+    color: #0044ff;
+    text-shadow: 1px 0 2px black;
+}
+
+#quemsomos-header .subtitle::before {
+    content: "";
+    margin-right: 8px;
+    height: 50px;
+    width: 8px;
+    background-color: #0044ff;
+    box-shadow: 1px 0 3px 0 black;
+}
+
+#content p {
+    width: 400px;
+    font-size: 13pt;
+    text-align: justify;
+    margin: 20px 0;
+    text-shadow: 1px 0 2px silver;
+}
+
 #tipos-servicos, #tipos-planos {
     display: flex;
+}
+
+.subtitle {
+    font-size: 25pt;
+}
+
+.subtitle-tipos {
+    font-size: 20pt;
 }
 
 #bottom-bar {
@@ -70,10 +156,14 @@
 #footer-bar {
     user-select: none;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 12pt;
     color: white;
     height: 100%;
+}
+
+#footer-bar p {
+    text-shadow: 1px 0 3px black;
 }
 
 #name {
@@ -84,6 +174,54 @@
     .flex-center {
         margin: 0 20px 0 20px;
     }
+
+    #header-bar, #footer-bar {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    #quem-somos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #content p {
+        font-size: 15pt;
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 850px) {
+    #header-bar, #footer-bar {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    #flex-turismos {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #flex-turismos #main-header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #main-header .desloca {
+        margin-right: 200px;
+    }
+
+    #up-bar {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    #bottom-bar {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
 
 @media (max-width: 650px) {
@@ -93,5 +231,10 @@
 
     #footer-bar {
         flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #main-header .desloca {
+        margin-right: 0;
     }
 }
