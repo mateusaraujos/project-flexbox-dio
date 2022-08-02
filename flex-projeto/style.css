@@ -4,6 +4,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    user-select: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid white;
+    text-shadow: 1px 0 3px black;
+    box-shadow: 1px 1px 3px 0 black;
+}
+
+a:hover {
+    text-shadow: 1px 1px 3px grey;
+    background-color: white;
+    color: #0044ff;
+}
+
 .flex-center {
     display: flex;
     max-width: 950px;
@@ -14,8 +31,6 @@
     background-color: #0044ff;
     height: 80px;
     padding: 20px 0;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 #header-bar {
@@ -43,24 +58,8 @@
     margin: 5px;
 }
 
-a {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: white;
-    border-radius: 50px;
-    border: 2px solid white;
-    text-shadow: 1px 0 3px black;
-    box-shadow: 1px 1px 3px 0 black;
-}
-
-a:hover {
-    text-shadow: 1px 1px 3px grey;
-    background-color: white;
-    color: #0044ff;
-}
-
 #flex-turismos {
-    height: 90vh;
+    padding: 50px 0;
     align-items: center;
     justify-content: space-around;
 }
@@ -71,7 +70,7 @@ a:hover {
 }
 
 #main-header #title {
-    font-size: 30pt;
+    font-size: 35pt;
     color: #0044ff;
     line-height: 45px;
     margin-bottom: 10px;
@@ -108,15 +107,16 @@ a:hover {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
+    padding: 50px 0;
 }
 
-#quemsomos-header .subtitle {
+#quemsomos-header .subtitle, #planos-header .subtitle {
     display: flex;
     color: #0044ff;
-    text-shadow: 1px 0 2px black;
+    text-shadow: 1px 1px 1px grey;
 }
 
-#quemsomos-header .subtitle::before {
+#quemsomos-header .subtitle::before, #planos-header .subtitle::before {
     content: "";
     margin-right: 8px;
     height: 50px;
@@ -133,24 +133,103 @@ a:hover {
     text-shadow: 1px 0 2px silver;
 }
 
+#mid-bar {
+    background-color: #0044ff;
+    width: 100%;
+}
+
+#servicos, #planos {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#servicos-header .subtitle {
+    display: flex;
+    color: white;
+    text-shadow: 1px 0 3px black;
+}
+
+#servicos-header .subtitle::before {
+    content: "";
+    margin-right: 8px;
+    height: 50px;
+    width: 8px;
+    background-color: white;
+    box-shadow: 1px 0 3px 0 black;
+}
+
 #tipos-servicos, #tipos-planos {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .subtitle {
     font-size: 25pt;
 }
 
+#tipos-servicos .nossos-servicos, #tipos-planos .nossos-planos {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.servicos-icon, .servicos-icon img {
+    margin-bottom: 20px;
+}
+
+.servicos-icon img {
+    display: block;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+}
+
+.servicos-icon figcaption{
+    margin-top: 20px;
+    font-size: 15pt;
+    text-shadow: 1px 0 3px black;
+    font-weight: 700;
+}
+
+.blue-line {
+    margin: auto;
+    width: 80%;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #0044ff;
+}
+
 .subtitle-tipos {
     font-size: 20pt;
+    color: #0044ff;
+    text-shadow: 1px 0 1px grey;
+}
+
+.box-size {
+    margin: auto;
+    padding: 20px;
+    width: 200px;
+    border: 3px solid #0044ff;
+}
+
+.box-size a {
+    margin: auto;
+}
+
+.box-size .lista-planos {
+    color: #0044ff;
+    text-align: left;
+    font-size: 10pt;
+    margin: 30px 0;
 }
 
 #bottom-bar {
     height: 80px;
     padding: 20px 0;
     background-color: #0044ff;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
 }
 
 #footer-bar {
@@ -211,16 +290,6 @@ a:hover {
 
     #main-header .desloca {
         margin-right: 200px;
-    }
-
-    #up-bar {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    #bottom-bar {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
     }
 }
 
