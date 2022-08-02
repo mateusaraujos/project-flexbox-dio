@@ -107,7 +107,7 @@ a:hover {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
-    padding: 50px 0;
+    padding: 50px 0 100px 0;
 }
 
 #quemsomos-header .subtitle, #planos-header .subtitle {
@@ -209,10 +209,12 @@ a:hover {
 }
 
 .box-size {
+    flex: 1;
     margin: auto;
-    padding: 20px;
-    width: 200px;
+    padding: 20px 5px;
+    width: 250px;
     border: 3px solid #0044ff;
+    box-shadow: 10px 10px 15px 0 silver;
 }
 
 .box-size a {
@@ -222,8 +224,12 @@ a:hover {
 .box-size .lista-planos {
     color: #0044ff;
     text-align: left;
-    font-size: 10pt;
-    margin: 30px 0;
+    font-size: 13pt;
+    margin: 30px 0 30px 50px;
+}
+
+#tipos-planos {
+    align-items: flex-end;
 }
 
 #bottom-bar {
@@ -296,6 +302,11 @@ a:hover {
 @media (max-width: 650px) {
     #header-bar {
         flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #up-bar {
+        height: 100px;
     }
 
     #footer-bar {
@@ -305,5 +316,15 @@ a:hover {
 
     #main-header .desloca {
         margin-right: 0;
+    }
+}
+
+@media (max-width: 330px) {
+    #page-links a {
+        font-size: 8pt;
+    }
+
+    .subtitle {
+        font-size: 24pt;
     }
 }
