@@ -194,6 +194,10 @@ a:hover {
     font-weight: 700;
 }
 
+#icon-1 img, #icon-2 img {
+    margin: 0 38.51px;
+}
+
 .blue-line {
     margin: auto;
     width: 80%;
