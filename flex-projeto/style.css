@@ -59,7 +59,7 @@ a:hover {
 }
 
 #flex-turismos {
-    padding: 50px 0;
+    padding: 100px 0 50px 0;
     align-items: center;
     justify-content: space-around;
 }
@@ -140,8 +140,8 @@ a:hover {
 
 #servicos, #planos {
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #servicos-header .subtitle {
